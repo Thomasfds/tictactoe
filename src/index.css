@@ -1,0 +1,65 @@
+body {  
+  font:14px "Century Gothic", Futura, sans-serif;
+  margin:20px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.game-info {
+  margin-left:20px;
+
+}
+
+.game{
+  display:flex;
+  flex-direction: row;
+}
+
+.kdb-navigation .square:focus{
+  background:#ddd;
+}
+
+.square:focus{
+  outline:none;
+
+}
+
+.statut{
+margin-bottom:10px;
+}
+
+button{
+  width:100%;
+}
+
+.square{
+  background:#fff;
+  border: 1px solid #999;
+  float:left;
+  font-size: 215px;
+  font-weight:bold;
+  line-height:34px;
+  margin-right:-1px;
+  margin-left:-1px;
+  padding:0;
+  text-align:center;
+  height: 200px;
+  width: 200px;
+
+}
+
+ol, ul{
+  padding-left:30px;
+}
+
+.board-row:after{
+  clear:both;
+  content:"";
+  display:table;
+}
