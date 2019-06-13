@@ -7,6 +7,10 @@ import Garage from './Garage';
 import Game from './Game';
 import Tick from './Tick';
 import Clock from './Clock';
+import Toggle from './Toggle';
+import LoginControl from './LoginControl';
+import Mailbox from './Mailbox';
+import Liste from './Liste';
 
 import * as serviceWorker from './serviceWorker';
 
@@ -31,9 +35,18 @@ const myelement = (<p>Coucou voilà mon html {54684654654-56489464646465}</p>);
 const  myeselent2 = React.createElement('p', {}, 'coucou ici lol');
 
 
-
+ReactDOM.render(<LoginControl />, document.getElementById('root2'));
 ReactDOM.render(<Game />, document.getElementById('root'));
 ReactDOM.render(<Clock />, document.getElementById('popo'));
+ReactDOM.render(<Toggle />, document.getElementById('popo2'));
+
+const numbers =['5','4','3','2','1'];
+
+ReactDOM.render(<Liste numbers={numbers} />, document.getElementById('popo3'));
+
+const message =['COUCOU CA FARTE', 'CA FARTE ET TOI', 'JAI FAIM'];
+
+ReactDOM.render(<Mailbox  messagesnonlus={message}/>, document.getElementById('root3'));
 
 //ReactDOM.render(<Garage />, document.getElementById('popo'));
 
