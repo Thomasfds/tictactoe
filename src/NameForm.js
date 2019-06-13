@@ -19,6 +19,7 @@ class NameForm extends React.Component{
     handleSubmit(event){
         alert('Ton nom est '+ this.state.value)
         //A mettre en react au lieux du return que l'ont mettrait en Javascript
+        event.preventDefault();
     }
 
     render(){
