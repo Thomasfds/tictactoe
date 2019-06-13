@@ -11,6 +11,7 @@ import Toggle from './Toggle';
 import LoginControl from './LoginControl';
 import Mailbox from './Mailbox';
 import Liste from './Liste';
+import NameForm from './NameForm';
 
 import * as serviceWorker from './serviceWorker';
 
@@ -47,6 +48,8 @@ ReactDOM.render(<Liste numbers={numbers} />, document.getElementById('popo3'));
 const message =['COUCOU CA FARTE', 'CA FARTE ET TOI', 'JAI FAIM'];
 
 ReactDOM.render(<Mailbox  messagesnonlus={message}/>, document.getElementById('root3'));
+
+ReactDOM.render(<NameForm />, document.getElementById('popo4'));
 
 //ReactDOM.render(<Garage />, document.getElementById('popo'));
 
